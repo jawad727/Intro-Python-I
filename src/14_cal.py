@@ -22,3 +22,11 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+mform = input("Input month: ")
+mval = str(mform)
+yform = input("Input year: ")
+yval = str(yform)
+
+#def calend(month = ):
+#   print(mform)
