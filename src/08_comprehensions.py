@@ -34,8 +34,9 @@ print(y)
 # the user entered into list x.
 
 x = input("Enter comma-separated numbers:")
+list = [x.split()]
 
 # What do you need between the square brackets to make it work?
-y = [i % 2 == 0 for i in range(1, 11)]
+y = [i for i in range(1, 10) if i % 2 == 0 ]
 
 print(y)
