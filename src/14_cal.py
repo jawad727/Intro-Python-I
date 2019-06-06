@@ -22,3 +22,18 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+mform = input("Input month: ")
+mval = str(mform)
+yform = input("Input year: ")
+yval = str(yform)
+
+def calend(monthh = datetime.now().month, yearr = datetime.now().year):
+    if mval == '' and yval == '':
+        print("The format in our program expects arguments to be given.")
+    else: 
+         print(calendar.month(int(yearr), int(monthh)))
+
+calend(yearr = yval, monthh = mval)
+
+

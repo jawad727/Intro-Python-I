@@ -9,6 +9,12 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Print all the contents of the file, then close the file
 
 # YOUR CODE HERE
+def openit(link):
+    f = open(link, "r")
+    print(f.read())
+    f.close()
+
+openit("./src/foo.txt")
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -16,3 +22,14 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+
+def writeit():
+    f = open("./src/bar.txt", "w+")
+    for i in range(3):
+        f.write(f"Line number {i + 1} \n")
+    f.close()
+
+writeit()
+
+openit("./src/bar.txt")
+

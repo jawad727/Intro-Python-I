@@ -4,9 +4,17 @@
 
 # Read a number from the keyboard
 num = input("Enter a number: ")
-num = int(num)
+val = int(num)
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
 # YOUR CODE HERE
 
+def evenTracker():
+    if val % 2 == 0:
+        print(True)
+    else:
+        print(False)
+
+
+evenTracker()
